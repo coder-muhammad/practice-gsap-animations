@@ -5,6 +5,8 @@ const PORT = 5000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/gsap', express.static(path.join(__dirname, 'node_modules', 'gsap')));
+
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });

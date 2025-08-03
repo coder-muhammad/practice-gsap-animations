@@ -4,9 +4,13 @@ body {
   justify-content: flex-start;
   min-height: 100vh;
   margin: 0;
+  background-color: #f4f4f4;
   overflow: hidden;
 }
 
 .box {
-  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-left: 20px;
 }
