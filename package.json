@@ -2,6 +2,14 @@
   "name": "practice-gsap-animations",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://github.com/coder-muhammad/practice-gsap-animations#readme",
+  "bugs": {
+    "url": "https://github.com/coder-muhammad/practice-gsap-animations/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coder-muhammad/practice-gsap-animations.git"
+  },
   "license": "ISC",
   "author": "",
   "type": "commonjs",
