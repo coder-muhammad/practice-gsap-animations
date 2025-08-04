@@ -26,7 +26,10 @@ gsap.fromTo(".red",
 
 
 let tl = gsap.timeline();
-tl.to("#green", {duration: 1, x: 774}, .5)
+tl.addLabel("step2", 0)
+  .to("#green", {duration: 1, x: 774}, .5)
   .to("#blue", {duration: 1, x: 774}, "-=0.5")
-  .to("#purple", {duration: 1, x: 774}, "+=1")
-  .to("#red", {duration: 1, x: 774}, "+=1")
+  .to("#purple", {duration: 1, x: 774}, "+=0.2")
+  .add("blueSpin", "+=1")
+  .to("#red", {duration: 1, x: 774}, "blueSpin+=1")
+  .seek("step2")
