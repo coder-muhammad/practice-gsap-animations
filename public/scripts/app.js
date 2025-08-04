@@ -26,7 +26,7 @@ gsap.fromTo(".red",
 
 
 let tl = gsap.timeline();
-tl.to("#green", {duration: 1, x: 774})
-  .to("#blue", {duration: 2, x: 774})
-  .to("#purple", {duration: 1, x: 774})
-  .to("#red", {duration: 1, x: 774})
+tl.to("#green", {duration: 1, x: 774}, .5)
+  .to("#blue", {duration: 1, x: 774}, "-=0.5")
+  .to("#purple", {duration: 1, x: 774}, "+=1")
+  .to("#red", {duration: 1, x: 774}, "+=1")
