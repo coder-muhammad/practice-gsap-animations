@@ -1,6 +1,6 @@
 gsap.to(".green", {
   rotation: 27,
-  x: 200,
+  x: 100,
   duration: 2,
 });
 
@@ -17,9 +17,16 @@ gsap.from(".purple", {
 });
 
 gsap.fromTo(".red",
-  { x: -100 }, 
+  { x: -500 }, 
   { 
     rotation: 360, 
     x: 100, 
     duration: 3,
   });
+
+
+let tl = gsap.timeline();
+tl.to("#green", {duration: 1, x: 774})
+  .to("#blue", {duration: 2, x: 774})
+  .to("#purple", {duration: 1, x: 774})
+  .to("#red", {duration: 1, x: 774})
